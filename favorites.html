@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favoriler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Favori Yemeklerim</h1>
+  <div class="favorites-container"></div>
+
+  <script>
+    const favoritesContainer = document.querySelector(".favorites-container");
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (favorites.length === 0) {
+      favoritesContainer.innerHTML = "<p>Henüz favori eklemediniz.</p>";
+    } else {
+      favoritesContainer.innerHTML = favorites.map((item) => {
+        return `
+          <div class="menu-item">
+            <img src="${item.img}" alt="${item.title}" />
+            <h4>${item.title} - ${item.country}</h4>
+            <p>${item.desc}</p>
+            <small>${item.history}</small>
+          </div>
+        `;
+      }).join("");
+    }
+  </script>
+</body>
+</html>
