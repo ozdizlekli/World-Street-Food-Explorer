@@ -43,19 +43,19 @@ git clone https://github.com/kullaniciadi/world-street-food.git
 4. favorites.html sayfasında favori yemeklerinizi görebilirsiniz.
    
 ## Teknolojiler
--HTML5
--CSS3
--JavaScript (ES6+)
--LocalStorage
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- LocalStorage
 
 ## Görseller
 Tüm yemek resimleri images/ klasöründe bulunur ve her yemek kartında gösterilir.
 
 ## Geliştirici
--Zehra Sıla Özdizlekli
--E-posta: zehrasilaozdizlekli@gmail.com
--GitHub: ozdizlekli
--LinkedIn: Zehra Sıla Özdizlekli
+- Zehra Sıla Özdizlekli
+- E-posta: zehrasilaozdizlekli@gmail.com
+- GitHub: ozdizlekli
+- LinkedIn: Zehra Sıla Özdizlekli
 
 ## Lisans
 MIT License © 2025 Zehra Sıla Özdizlekli
